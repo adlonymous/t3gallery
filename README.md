@@ -4,7 +4,7 @@ As of now, just clone the repo, run `npm install` and `npm run dev`
 
 # TODO
 
-- [] Deploy (Vercel)
+- [x] Deploy (Vercel)
 - [] Scaffold basic ui with mock data
 - [] Setup a database (Vercel Postgres)
 - [] Attach database to UI

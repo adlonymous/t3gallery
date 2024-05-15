@@ -1,36 +1,30 @@
+import Image from "next/image";
 import Link from "next/link";
+
+const mockURLs = [
+  "https://utfs.io/f/530d3abd-74d1-4673-9453-600fc09efdbc-m5hrg2.png",
+  "https://utfs.io/f/6e2646ed-cb25-421b-a255-6a0e5956c7fe-250g.png",
+  "https://utfs.io/f/83aad697-0aa7-456f-8bc2-4e35aa06ab02-2fyg.png",
+  "https://utfs.io/f/9fdf5a4b-3a2b-4197-9bff-e3fadd94324f-26a8r.png",
+  "https://utfs.io/f/a3dd6033-0e1f-461e-88c7-91234372511a-ibclvr.png",
+  "https://utfs.io/f/bf19bb3b-0e09-4a28-a9d0-4b1d4f40ba44-n3j1h4.png",
+  "https://utfs.io/f/2af95e57-4691-41b3-bcb1-e926693f8e5b-23qgb.png",
+];
+
+const mockImages = mockURLs.map((url, index) => ({
+  id: index + 1,
+  url,
+}));
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
-            </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
-          </Link>
-        </div>
+    <main className="">
+      <div className="flex flex-wrap gap-4">
+        {mockImages.map((image) => (
+          <div key={image.id} className="w-48">
+            <img src={image.url} alt="image" className="rounded-xl" />
+          </div>
+        ))}
       </div>
     </main>
   );
