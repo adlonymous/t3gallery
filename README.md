@@ -6,7 +6,7 @@ As of now, just clone the repo, run `npm install` and `npm run dev`
 
 - [x] Deploy (Vercel)
 - [x] Scaffold basic ui with mock data
-- [] Tidy up build process
+- [x] Tidy up build process
 - [] Setup a database (Vercel Postgres)
 - [] Attach database to UI
 - [] Add authentication (Clerk)
