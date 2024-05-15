@@ -9,7 +9,7 @@ As of now, just clone the repo, run `npm install` and `npm run dev`
 - [x] Tidy up build process
 - [x] Setup a database (Vercel Postgres)
 - [x] Attach database to UI
-- [] Add authentication (Clerk)
+- [x] Add authentication (Clerk)
 - [] Add image upload
 - [] Error management (Sentry)
 - [] Routing/image page (parallel route)
