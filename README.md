@@ -1,6 +1,6 @@
 # T3 Gallery
 
-As of now, just clone the repo, run `npm install` and `npm run dev`
+Clone repo, run `npm install`, get the required environment variables, and run `npm run db:push` to seed the database. Then run `npm run dev`. Run `npm run db:studio` to see the database. Run `npm run build` to build the app.
 
 # TODO
 
@@ -11,7 +11,7 @@ As of now, just clone the repo, run `npm install` and `npm run dev`
 - [x] Attach database to UI
 - [x] Add authentication (Clerk)
 - [x] Add image upload
-- [] "taint" (server-only)
+- [x] "taint" (server-only)
 - [] Use Next/Image component
 - [] Error management (Sentry)
 - [] Routing/image page (parallel route)
