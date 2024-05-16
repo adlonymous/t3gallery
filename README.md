@@ -11,6 +11,8 @@ As of now, just clone the repo, run `npm install` and `npm run dev`
 - [x] Attach database to UI
 - [x] Add authentication (Clerk)
 - [] Add image upload
+- [] "taint" (server-only)
+- [] Use Next/Image component
 - [] Error management (Sentry)
 - [] Routing/image page (parallel route)
 - [] Delete button w/ Server Actions

@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Roboto_Mono } from "next/font/google";
 import TopNav from "./_components/topnav";
+import "@uploadthing/react/styles.css";
 
 const inter = Roboto_Mono({
   subsets: ["latin"],
@@ -9,9 +10,9 @@ const inter = Roboto_Mono({
 });
 
 export const metadata = {
-  title: "Mous Digital Asset Gallery",
+  title: "Mous and Friends' Digital Asset Gallery",
   description:
-    "my collection of expensive and worthless jpegs that live on the blockchain",
+    "a collection of expensive and worthless jpegs that live on the blockchain",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
