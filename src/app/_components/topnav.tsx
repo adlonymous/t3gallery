@@ -23,6 +23,7 @@ export default function TopNav() {
             onClientUploadComplete={() => {
               router.refresh();
             }}
+            className="px-4 text-sm"
           />
           <UserButton />
         </SignedIn>

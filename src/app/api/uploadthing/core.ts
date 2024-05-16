@@ -7,11 +7,11 @@ import { images } from "~/server/db/schema";
 const f = createUploadthing();
 
 export const ourFileRouter = {
-  imageUploader: f({ image: { maxFileSize: "4MB" } })
+  imageUploader: f({ image: { maxFileSize: "4MB", maxFileCount: 40 } })
     .middleware(async ({ req }) => {
       const user = auth();
 
-      if (!user) throw new UploadThingError("Unauthorized");
+      if (!user.userId) throw new UploadThingError("Unauthorized");
 
       return { userId: user.userId };
     })
@@ -21,6 +21,7 @@ export const ourFileRouter = {
       await db.insert(images).values({
         name: file.name,
         url: file.url,
+        userId: metadata.userId,
       });
 
       console.log("file url", file.url);

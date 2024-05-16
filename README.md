@@ -10,7 +10,7 @@ As of now, just clone the repo, run `npm install` and `npm run dev`
 - [x] Setup a database (Vercel Postgres)
 - [x] Attach database to UI
 - [x] Add authentication (Clerk)
-- [] Add image upload
+- [x] Add image upload
 - [] "taint" (server-only)
 - [] Use Next/Image component
 - [] Error management (Sentry)
