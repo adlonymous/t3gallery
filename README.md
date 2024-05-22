@@ -13,7 +13,7 @@ Clone repo, run `npm install`, get the required environment variables, and run `
 - [x] Add image upload
 - [x] "taint" (server-only)
 - [x] Use Next/Image component
-- [] Error management (Sentry)
+- [x] Error management (Sentry)
 - [] Routing/image page (parallel route)
 - [] Delete button w/ Server Actions
 - [] Analytics (posthog)
